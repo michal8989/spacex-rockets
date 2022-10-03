@@ -1,3 +1,4 @@
+
 ### Description
 
 Simple REST API for fetching SpaceX rockets.
@@ -10,21 +11,21 @@ Used stack:
 - Requesting GraphQL API
 - Latest NodeJS
 
-###Links
+### Links
 
 [SpaceX public GraphQL API](https://api.spacex.land/graphql/ "SpaceX public GraphQL API")
 
-###How to run
+### How to run
 
 `npm ci`
 
 `npm run start`
 
                     
-###Endpoints
+### Endpoints
                     
-Method  | Path | Description
-------------- | -------------
-GET  | /api/v1/rockets | Gets all rockets
-GET | /api/v1/rockets/:id | Gets rocket entity by id
-DELETE | /api/v1/rockets/:id | Destroys rocket 
+|Method  | Path | Description |
+|------------- | -------------| -------------|
+|GET  | /api/v1/rockets | Gets all rockets|
+|GET | /api/v1/rockets/:id | Gets rocket entity by id|
+|DELETE | /api/v1/rockets/:id | Destroys rocket |
