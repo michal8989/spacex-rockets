@@ -9,18 +9,15 @@ import RocketsController from './Application/Rest/Controllers/RocketsController'
 require('dotenv').config();
 
 const port = process.env.port || 3000;
-
 const app = express();
 const apiRouter = express.Router();
+
 app.use(bodyParser.json());
 app.use(apiLogger);
-
 
 app.use('/api/v1', apiRouter);
 attachControllers(apiRouter, [RocketsController]);
 
-app.listen(port, () => {
-  return console.log(`App is listening at http://localhost:${port}`);
-});
+app.listen(port, () => console.log(`App is listening at http://localhost:${port}`));
 
 app.use(apiErrorHandler);
