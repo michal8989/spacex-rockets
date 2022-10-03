@@ -1,7 +1,7 @@
 import { Inject, Injectable } from "@decorators/di";
-import { RocketPayloadInterface } from "../../../Application/Rest/Payloads/RocketPayloadInterface";
-import { ROCKETS_API } from "../../../Container";
-import { RocketsRemoteRepositoryInterface } from "../../Interfaces/RocketsRemoteRepositoryInterface";
+import { RocketPayloadInterface } from "../../../../Application/Rest/Payloads/RocketPayloadInterface";
+import { ROCKETS_API } from "../../../../Container";
+import { RocketsRemoteRepositoryInterface } from "../../../Interfaces/RocketsRemoteRepositoryInterface";
 const axios = require('axios');
 
 const RocketSchema = `{

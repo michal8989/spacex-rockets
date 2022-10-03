@@ -5,7 +5,6 @@ import { apiLogger } from './Application/Rest/Middlewares/ApiLogger';
 import bodyParser from 'body-parser';
 import { apiErrorHandler } from './Application/Rest/Middlewares/ApiErrorHandler';
 import { attachControllers } from '@decorators/express';
-
 import RocketsController from './Application/Rest/Controllers/RocketsController';
 require('dotenv').config();
 

@@ -1,8 +1,8 @@
 import { Inject, Injectable } from "@decorators/di";
-import { RocketsCachedRemoteRepositoryInterface } from "../../Interfaces/RocketsCachedRemoteRepositoryInterface copy";
+import { RocketsCachedRemoteRepositoryInterface } from "../../Interfaces/RocketsCachedRemoteRepositoryInterface";
 import { RocketsCacheRepository } from "./RocketsCacheRepository";
 import { RocketsRemoteRepositoryInterface } from "../../Interfaces/RocketsRemoteRepositoryInterface";
-import { SpaceXRemoteRepository } from "../Remote/SpaceXRemoteRepository";
+import { SpaceXRemoteRepository } from "./Remote/SpaceXRemoteRepository";
 import { RocketInfrastructureEntity } from "../../Entities/RocketInfrastructure";
 import { RocketsRepositoryInterface } from "../../../Domain/Interfaces/RocketsRepositoryInterface";
 
