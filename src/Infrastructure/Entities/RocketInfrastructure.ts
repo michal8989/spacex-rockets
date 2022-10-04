@@ -15,6 +15,7 @@ export class RocketInfrastructureEntity {
     ) {
     }
 
+    // Layers are mixed here, not enough time to fix it :)
     toDomain() {
         return new Rocket(
                 this.id, 
@@ -29,6 +30,7 @@ export class RocketInfrastructureEntity {
         );
     } 
 
+    // Layers are mixed here, not enough time to fix it :)
     static fromPayload(rocket: RocketPayloadInterface) {
         return new RocketInfrastructureEntity(
             rocket.id,

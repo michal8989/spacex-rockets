@@ -12,17 +12,17 @@ export default class RocketsController {
   // TODO should map all entities to ApplicationEntity before returning to the client.
 
   @Get('')
-  async getRockets(@Response() res: ExpressResponse, @Params('id') id: string): Promise<any> {
+  async getRockets(@Response() res: ExpressResponse, @Params('id') id: string): Promise<void> {
     res.json(await this.rocketsService.getRockets());
   }
 
   @Get('/:id')
-  async getRocket(@Response() res: ExpressResponse, @Params('id') id: string): Promise<any> {
+  async getRocket(@Response() res: ExpressResponse, @Params('id') id: string): Promise<void> {
     res.json(await this.rocketsService.getRocketById(id)); 
   }
 
   @Delete('/:id')
-  async destroyRocket(@Response() res: ExpressResponse, @Params('id') id: string): Promise<any> {
+  async destroyRocket(@Response() res: ExpressResponse, @Params('id') id: string): Promise<void> {
     const rocketToDestroy = await this.rocketsService.getRocketById(id);
     
     throw new RocketDestroyedException(rocketToDestroy);
