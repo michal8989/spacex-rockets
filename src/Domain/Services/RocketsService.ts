@@ -16,6 +16,7 @@ export default class RocketsService {
       }
 
       public async getRocketById(id: string): Promise<Rocket> {
+        // should get only one item form repo :) 
         const foundRocket = (await this.getRockets()).find(rocket => rocket.id === id);
 
         if(!foundRocket) {
