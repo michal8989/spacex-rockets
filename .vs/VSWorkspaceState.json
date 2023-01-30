@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src\\Application\\Rest",
+    "\\src\\Application\\Rest\\Payloads",
+    "\\src\\Domain\\Enitities",
+    "\\src\\Domain\\Services",
+    "\\src\\Infrastructure\\Repositiores",
+    "\\src\\Infrastructure\\Repositiores\\Rockets",
+    "\\src\\Infrastructure\\Repositiores\\Rockets\\Remote"
+  ],
+  "PreviewInSolutionExplorer": false
+}

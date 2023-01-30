@@ -1,5 +1,5 @@
 import { Response, Params, Controller, Get, Delete } from '@decorators/express';
-import { Inject, Injectable } from '@decorators/di';
+import {Inject, Injectable} from '@decorators/di';
 import RocketsService from '../../../Domain/Services/RocketsService';
 import { Response as ExpressResponse } from "express";
 import { RocketDestroyedException } from '../../../Domain/Exceptions/RocketDestroyedException';

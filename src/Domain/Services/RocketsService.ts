@@ -1,5 +1,4 @@
 import { Inject, Injectable } from '@decorators/di';
-import { ROCKETS_API } from "../../Container";
 import { RocketsRepository } from '../../Infrastructure/Repositiores/Rockets/RocketsRepository';
 import { RocketsRepositoryInterface } from '../Interfaces/RocketsRepositoryInterface';
 import { Rocket } from '../Enitities/Rocket';

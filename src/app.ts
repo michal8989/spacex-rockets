@@ -1,6 +1,5 @@
 import express from 'express';
 import './Container';
-import * as dotenv from 'dotenv'
 import { apiLogger } from './Application/Rest/Middlewares/ApiLogger';
 import bodyParser from 'body-parser';
 import { apiErrorHandler } from './Application/Rest/Middlewares/ApiErrorHandler';
@@ -8,7 +7,7 @@ import { attachControllers } from '@decorators/express';
 import RocketsController from './Application/Rest/Controllers/RocketsController';
 require('dotenv').config();
 
-const port = process.env.port || 3000;
+const port = process.env.PORT || 3000;
 const app = express();
 const apiRouter = express.Router();
 
